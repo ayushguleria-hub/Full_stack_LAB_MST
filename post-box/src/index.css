@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1e293b;
+}
+
+/* Main page */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: white;
+  padding: 22px 50px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+/* Post box */
+.post-box {
+  width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.post-box h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  color: #1e293b;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Textarea */
+.post-box textarea {
+  width: 100%;
+  height: 150px;
+  padding: 14px;
+  font-size: 15px;
+  font-family: inherit;
+  resize: none;
+
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.post-box textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Counter */
+.counter {
+  text-align: right;
+  color: #64748b;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.counter.error {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+/* Error message */
+.limit-message {
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Button */
+.post-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.post-box button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+}
+
+.post-box button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  color: #64748b;
+  font-size: 13px;
+}
